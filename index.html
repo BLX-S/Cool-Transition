@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Hero Transitions</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html, body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #f1f1f1;
+}
+
+main {
+  height: 100%;
+}
+
+.green-box {
+  height: 350px;
+  background: #70c26f;
+}
+
+.tile-container {
+  position: absolute;
+  top: 275px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  user-select: none;
+}
+
+.tile {
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.page-container {
+  visibility: hidden;
+}
+
+.page {
+  cursor: pointer;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.hero-1 {
+  background: #F4DB33;
+}
+
+.hero-2 {
+  background: #972FF8;
+}
+
+.hero-3 {
+  background: #7DD6FE;
+}
+
+.hero-4 {
+  background: #DC3C84;
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <main>  
+  <div class="green-box"></div>
+  
+  <div class="tile-container">
+    <div class="tile hero-1"></div>
+    <div class="tile hero-2"></div>
+    <div class="tile hero-3"></div>
+    <div class="tile hero-4"></div>
+  </div>  
+</main>
+
+<div class="page-container">
+  <div class="page hero-1"></div>
+  <div class="page hero-2"></div>
+  <div class="page hero-3"></div>
+  <div class="page hero-4"></div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
